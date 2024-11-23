@@ -11,11 +11,19 @@ public class TestPassingParameter {
         System.out.println("jungle dvd title: " + jungleDVD.getTitle());
     }
 
-    public static void swap(Object o1, Object o2) {
-        Object tmp = o1;
-        o1 = o2;
-        o2 = tmp;
+    //public static void swap(Object o1, Object o2) {
+    //    Object tmp = o1;
+    //   o1 = o2;
+    //    o2 = tmp;
+    //}
+    
+    //Swapping the content (state) of the two objects
+    public static void swap(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+        String tempTitle = dvd1.getTitle();
+        dvd1.setTitle(dvd2.getTitle());
+        dvd2.setTitle(tempTitle);
     }
+    
 
     public static void changeTitle(DigitalVideoDisc dvd, String title) {
         String oldTitle = dvd.getTitle();
