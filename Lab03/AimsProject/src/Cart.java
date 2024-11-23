@@ -69,4 +69,14 @@ public class Cart {
     //        }
     //    }
     //}
+
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+        if (qtyOrdered + 2 <= MAX_NUMBERS_ORDERED) {
+            itemOrdered[qtyOrdered++] = dvd1;
+            itemOrdered[qtyOrdered++] = dvd2;
+            System.out.println("The discs have been added: " + dvd1.getTitle() + " and " + dvd2.getTitle());
+        } else {
+            System.out.println("Not enough space to add discs.");
+        }
+    }
 }
