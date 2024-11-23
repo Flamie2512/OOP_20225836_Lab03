@@ -75,7 +75,7 @@ public class Cart {
             System.out.println("The disc " + dvd2.getTitle() + " has been added");
         }
         if (qtyOrdered == MAX_NUMBERS_ORDERED) {
-            System.out.println("The cart is almost full");
+            System.out.println("The cart is full");
         }
     }
     
