@@ -76,7 +76,39 @@ public class Cart {
         }
         if (qtyOrdered == MAX_NUMBERS_ORDERED) {
             System.out.println("The cart is full");
-        }
+        }  
     }
     
+    public void print(){
+        System.out.println("***********************CART***********************");
+        System.out.println("Ordered Items:");
+  
+        float totalCost = 0;
+  
+        for(int i = 0;i < qtyOrdered;i++){
+           System.out.println((i + 1) + ". " + itemOrdered[i].toString());
+        }
+        System.out.printf("Total cost: %.2f $%n", totalCost());
+        System.out.println("***************************************************");
+    }
+
+    public void searchById(int id){
+        for(int i = 0;i < qtyOrdered;i++){
+           if(itemOrdered[i].getId() == id){
+              System.out.println(itemOrdered[i].toString());
+              return;
+           }
+        }
+        System.out.println("Not found DVD with Id = " + id);
+     }
+  
+     public void searchByTitle(String title){
+        for(int i = 0;i < qtyOrdered;i++){
+           if(itemOrdered[i].isMatch(title)){
+              System.out.println(itemOrdered[i].toString());
+              return;
+           }
+        }
+        System.out.println("Not found DVD with title : " + title);
+     }
 }
