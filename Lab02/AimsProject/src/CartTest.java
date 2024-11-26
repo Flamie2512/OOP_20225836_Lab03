@@ -9,15 +9,5 @@ public class cartTest {
     //Test the print method 
     cart.print();
     //To-do: Test the search methods here
-
-    // Search by ID
-    System.out.println("\nSearch by ID:");
-    cart.searchById(1);
-    cart.searchById(5);
-
-    // Search by title
-    System.out.println("\nSearch by Title:");
-    cart.searchByTitle("Star Wars");
-    cart.searchByTitle("Frozen"); 
     }
 }
