@@ -75,4 +75,8 @@ public class DigitalVideoDisc {
     public static int getNbDigitalVideoDiscs() {
         return nbDigitalVideoDiscs;
     }
+
+    public boolean isMatch(String title){
+        return this.title.equalsIgnoreCase(title);
+    }
 }
