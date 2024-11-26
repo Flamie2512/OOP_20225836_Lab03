@@ -1,4 +1,4 @@
-public class CartTest {
+public class cartTest {
     public static void main(String[] args) {
     //Create a new cart 
     Cart cart = new Cart();
